@@ -197,22 +197,19 @@
             display: none;
         }
 
-        /* 链接卡片样式 */
         .link-item {
-            display: block;
-            padding: 12px 14px;
+            cursor: pointer;
+            padding: 12px;
             background: rgba(255, 255, 255, 0.6);
-            border-radius: 14px;
-            margin-bottom: 10px;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #1e293b;
             text-decoration: none;
-            color: #0f172a;
-            font-weight: 500;
-            font-size: 15px;
-            transition: background 0.2s;
             border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: background 0.2s;
         }
 
-        .link-item:active {
+        .link-item:hover {
             background: rgba(255, 255, 255, 0.9);
         }
     </style>
@@ -243,14 +240,25 @@
                 <div class="fixed-password">*#20230730#*</div>
             </div>
 
-            <!-- 新增链接区域 -->
+            <!-- 新增链接卡片 -->
             <div class="card">
                 <div class="card-header">
-                    <span>🔗</span> 相关链接
+                    <span>🔗</span> 快捷工具
                 </div>
-                <a href="https://autumnhui.github.io/jtpassword/" target="_blank" class="link-item">捷途山海 T2 4.11动态口令</a>
-                <a href="http://manual.qianxian.tech/" target="_blank" class="link-item">抖音大伦哥教程</a>
-                <a href="https://tool.qianxian.tech" target="_blank" class="link-item">刷机工具（请使用Edge）</a>
+                <div style="display:flex; flex-direction: column; gap: 12px;">
+                    <div class="link-item" onclick="window.location.href='https://autumnhui.github.io/jtpassword/'">
+                        捷途山海 T2 4.11动态口令
+                    </div>
+                    <div class="link-item" onclick="window.location.href='http://manual.qianxian.tech/'">
+                        抖音大伦哥教程
+                    </div>
+                    <div class="link-item" onclick="window.location.href='https://tool.qianxian.tech'">
+                        刷机工具（请使用edge）
+                    </div>
+                    <div class="link-item" onclick="window.location.href='https://pw.qianxian.tech/'">
+                        捷途车机口令集结
+                    </div>
+                </div>
             </div>
 
             <!-- 静态密码卡片 -->
