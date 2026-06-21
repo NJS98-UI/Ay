@@ -196,6 +196,25 @@
         .hidden {
             display: none;
         }
+
+        /* 链接卡片样式 */
+        .link-item {
+            display: block;
+            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 14px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: 500;
+            font-size: 15px;
+            transition: background 0.2s;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .link-item:active {
+            background: rgba(255, 255, 255, 0.9);
+        }
     </style>
 </head>
 <body>
@@ -222,6 +241,16 @@
                     <span>🔒</span> 固定密码
                 </div>
                 <div class="fixed-password">*#20230730#*</div>
+            </div>
+
+            <!-- 新增链接区域 -->
+            <div class="card">
+                <div class="card-header">
+                    <span>🔗</span> 相关链接
+                </div>
+                <a href="https://autumnhui.github.io/jtpassword/" target="_blank" class="link-item">捷途山海 T2 4.11动态口令</a>
+                <a href="http://manual.qianxian.tech/" target="_blank" class="link-item">抖音大伦哥教程</a>
+                <a href="https://tool.qianxian.tech" target="_blank" class="link-item">刷机工具（请使用Edge）</a>
             </div>
 
             <!-- 静态密码卡片 -->
